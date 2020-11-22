@@ -1,0 +1,50 @@
+.headBackground{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.OuterLeft{
+    position: absolute;
+    top: 105px;
+    width: 350rpx;
+    left: 25rpx;
+}
+
+.OuterRight{
+    position: absolute;
+    top: 105px;
+    width: 350rpx;
+    Right: 25rpx;
+}
+
+
+.outer{
+    margin: 10px 15rpx 0px 15rpx;
+    width: 320rpx;
+    border-radius: 10px;
+}
+
+.foodImg{
+    width: 320rpx;
+    height: 100%;
+    background-color: rgba(229, 229, 229, 1);
+    border-radius: 10px;
+}
+
+.foodName{
+    padding: 0 10rpx;
+    height: 17px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 11px;
+    text-align: left;
+}
+
+.foodUser{
+    position: relative;
+    padding: 0 10rpx;
+    height: 12px;
+    color: rgba(138, 138, 138, 1);
+    font-size: 8px;
+    text-align: left;
+}

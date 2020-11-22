@@ -1,0 +1,10 @@
+<view>
+    <view>
+        <input class="weui-input" auto-focus placeholder="输入菜名"/>
+    </view> 
+    <view class="search_submit1">
+        <cover-image class="search_submit2" src="../../icon/home/搜索.png" bindtap="hadletap"/>
+    </view>
+</view>
+  
+ 

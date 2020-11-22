@@ -1,0 +1,37 @@
+.weui-input{
+    position: absolute;
+    left: 50rpx;
+    top: 259px;
+    width: 580rpx;
+    height: 47px;
+    border-radius: 10px;
+    background-color: rgba(253, 249, 246, 1);
+    color: rgba(138, 138, 138, 1);
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    line-height: 47px;
+}
+
+.search_submit1{
+    position: absolute;
+    left: 640rpx;
+    top: 259px;
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: rgba(245, 96, 53, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.search_submit2{
+    position: absolute;
+    left: 2rpx;
+    top: 5px;
+    z-index: 2;
+    width:100rpx;
+    height: 100rpx;
+}

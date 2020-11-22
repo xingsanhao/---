@@ -1,0 +1,10 @@
+<view class="foodImg">
+    <view class="foodImg_outer" wx:for="{{foodImg}}" wx:key="id">
+        <image class="foodImg" src="{{item.src}}" mode="widthFix"/>
+        <text class="foodname">{{item.name}}</text>
+        <image class="likes" src="https://i.niupic.com/images/2020/04/06/7hC2.png" bindtap="like" data-index="{{index}}" wx:if="{{item.liked == true}}"/>
+        <image class="likes" src="https://i.niupic.com/images/2020/04/06/7hut.png" bindtap="like" data-index="{{index}}" wx:if="{{item.liked == false}}"/>
+        <view class="likesnum">{{item.likes}}</view>
+    </view>
+</view>
+

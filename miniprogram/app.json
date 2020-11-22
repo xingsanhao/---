@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/mine/mine",
+    "pages/searchpage/searchpage",
+    "pages/dingzhihome/dingzhihome",
+    "pages/dingzhiList/dingzhiList",
+    "pages/dingzhiShow/dingzhiShow"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "拾味",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#101010",
+    "selectedColor": "#F56035",
+    "backgroundColor": "#FCE7D2",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home/导航栏-首页（未选中黑色）.png",
+        "selectedIconPath": "icon/home/导航栏-首页（选中色橙色）.png"
+      },
+      {
+        "pagePath": "pages/dingzhihome/dingzhihome",
+        "text": "定制",
+        "iconPath": "icon/home/定制.png",
+        "selectedIconPath": "icon/home/定制-o.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "icon/home/导航栏-社区（黑色）.png",
+        "selectedIconPath": "icon/home/导航栏-社区（选中色橙色）.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "icon/home/导航栏-个人中心（黑色）.png",
+        "selectedIconPath": "icon/home/导航栏-个人中心（选中色橙色）.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

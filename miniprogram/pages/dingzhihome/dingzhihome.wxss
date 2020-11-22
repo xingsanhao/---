@@ -1,0 +1,303 @@
+.headBackground{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 543px;
+}
+
+.weui-input{
+    position: absolute;
+    left: 134rpx;
+    top: 120px;
+    width: 480rpx;
+    height: 44px;
+    border-radius: 10px;
+    background-color: rgba(253, 249, 246, 1);
+    color: rgba(136, 136, 136, 1);
+    font-size: 14px;
+    text-align: left;
+    box-shadow: 0px 2px 6px 0px rgba(252, 231, 210, 1);
+    font-family: Microsoft Yahei;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.del{
+    position: absolute;
+    left: 60rpx;
+    top: 124px;
+    width: 30px;
+    height: 30px;
+}
+
+.add{
+    position: absolute;
+    left: 628rpx;
+    top: 124px;
+    width: 30px;
+    height: 30px;
+}
+
+.foodcontent1{
+    position: absolute;
+    left: 0px;
+    top: 173px;
+    width: 100%;
+    height: 44px;
+    line-height: 20px;
+    background-color: rgba(252, 231, 210, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 0;
+}
+
+.foodcontent2{
+    position: absolute;
+    left: 0px;
+    top: 213px;
+    width: 100%;
+    height: 44px;
+    line-height: 20px;
+    background-color: rgba(253, 249, 246, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 0;
+}
+
+.foodcontent3{
+    position: absolute;
+    left: 0px;
+    top: 257px;
+    width: 100%;
+    height: 44px;
+    line-height: 20px;
+    background-color: rgba(252, 231, 210, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 0;
+}
+
+.showFood1{
+    position: absolute;
+    top: 5px;
+    left: 46rpx;
+    width: 228rpx;
+    height: 29px;
+    line-height: 20px;
+    border-radius: 51px;
+    background-color: rgba(252, 178, 117, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.showFood2{
+    position: absolute;
+    top: 5px;
+    right: 46rpx;
+    width: 228rpx;
+    height: 29px;
+    line-height: 20px;
+    border-radius: 51px;
+    background-color: rgba(252, 178, 117, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.showFood{
+    position: absolute;
+    left: 256rpx;
+    top: 5px;
+    width: 114px;
+    height: 29px;
+    line-height: 20px;
+    border-radius: 50px;
+    background-color: rgba(252, 178, 117, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.Outer{
+    position: absolute;
+    top: 334px;
+    padding: 0 0 500px 0;
+}
+
+.outerhobby{
+    width: 100%;
+    height: 100px;
+}
+
+.hobby{
+    position: absolute;
+    left: 42rpx;
+    top: 0;
+    width: 40px;
+    height: 28px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 20px;
+    text-align: left;
+}
+
+.underhobby{
+    position: absolute;
+    left: 42rpx;
+    top: 28px;
+    width: 40px;
+    height: 5px;
+    background-color: #F56035;
+}
+
+.outerList{
+    display: flex;
+    padding: 20rpx;
+    position: absolute;
+    top: 40px;
+    width: 750rpx;
+    height: 50px;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tittle_hobby{
+    width: 200rpx;
+    height: 29px;
+    line-height: 20px;
+    border-radius: 50px;
+    background-color: rgba(238, 234, 234, 1);
+    color: rgba(57, 45, 56, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 5px;
+}
+
+.hobby_active{
+    background-color: #F56035;
+    color: white;
+}
+
+.outerextra{
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+.extra{
+    position: absolute;
+    left: 36rpx;
+    top: 0;
+    width: 80px;
+    height: 28px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 20px;
+    text-align: left;
+}
+
+.underextra{
+    position: absolute;
+    left: 42rpx;
+    top: 28px;
+    width: 80px;
+    height: 5px;
+    background-color: #F56035;
+}
+
+.requireShowOuter{
+    position: absolute;
+    top: 20px;
+}
+
+.requireShow{
+    position: relative;
+    margin: 20px 0 0 0;
+    left: 150rpx;
+    width: 500rpx;
+    height: 54px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: rgba(253, 249, 246, 1);
+    text-align: center;
+    border: 1px solid rgba(245, 96, 53, 1);
+}
+
+.requireIcon{
+    position: relative;
+    left: -27px;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    line-height: 20px;
+    background-color: #FCB275;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.icon{
+    position: relative;
+    top: 7px;
+    width: 33px;
+    height: 33px;
+}
+
+.requireTittle{
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    left: 178rpx;
+    height: 29px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 19px;
+    text-align: left;
+}
+
+.requireText{
+    z-index: 1;
+    position: absolute;
+    color: #101010;
+    bottom: 5px;
+    left: 60rpx;
+    height: 20px;
+    color: rgba(138, 138, 138, 1);
+    font-size: 12px;
+    text-align: left;
+}
+
+.tittle_active{
+    color: #F56035;
+}
+
+.icon_active{
+    background-color: #F56035;
+}
+
+.bottomImg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.Submit{
+    position: fixed;
+    left: 256rpx;
+    bottom: 50px;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 40px;
+    background-color: rgba(245, 96, 53, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid rgba(255, 255, 255, 0);
+    z-index: 4;
+}

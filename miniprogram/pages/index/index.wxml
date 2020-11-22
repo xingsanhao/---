@@ -1,0 +1,43 @@
+<!-- 轮播图 -->
+<view class="index_swiper">
+  <swiper autoplay indicator-dots indicator-active-color="#F56035" interval="2500" circular>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <navigator>
+        <image  mode="widthFix" src="{{item.img_src}}"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="inner1"></view>
+<view class="inner2"></view>
+<text class="eat">今天，想吃什么呢？</text>
+
+<!-- 搜索框 -->
+<view>
+  <Search></Search>
+</view>
+
+<view>
+  <text class="suggest1">为您推荐</text>
+  <text class="suggest2">给您带来潮流、健康、美味的食谱</text>
+</view>
+
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <foodImg foodImg="{{allImg[0].Img}}" bindlikesChange="handlelikes_allChange">
+    </foodImg>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+    <foodImg foodImg="{{allImg[1].Img}}" bindlikesChange="handlelikes_allChange">
+    </foodImg>
+  </block>
+  <block wx:elif="{{tabs[2].isActive}}">
+    <foodImg foodImg="{{allImg[2].Img}}" bindlikesChange="handlelikes_allChange">
+    </foodImg>
+  </block>
+  <block wx:elif="{{tabs[3].isActive}}">
+    <foodImg foodImg="{{allImg[3].Img}}" bindlikesChange="handlelikes_allChange">
+    </foodImg>
+  </block>
+</tabs>
+

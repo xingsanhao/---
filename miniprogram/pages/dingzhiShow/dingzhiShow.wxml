@@ -1,0 +1,52 @@
+<view>
+     <!-- 食物图片 -->
+    <image class="headImg" src="{{foodShow.src}}" mode="widthFix"/>
+
+    <view class="outer">
+        <!-- 食物名称 -->
+        <view class="foodName">{{foodShow.name}}</view>
+
+        <!-- 食物作者 -->
+        <view class="user">By {{foodShow.username}}</view>
+
+        <!-- 点赞数 -->
+        <view class="likes">
+            <view class="likedOuter">
+                <image class="likedIcon" src="https://i.niupic.com/images/2020/04/06/7hC2.png" mode="widthFix"/>
+            </view>
+            <image class="likesIcon" src="https://i.niupic.com/images/2020/04/06/7hC2.png" mode="widthFix"/>
+            <view class="likesNum">{{foodShow.likes}}</view>
+        </view>
+          
+
+        <!-- 食物标签 -->
+        <view class="tagTittle">标签</view>
+        <view class="tagOuter">
+            <view class="tag" wx:for="{{foodShow.tag}}" wx:key="index">
+                <view class="tagName">{{item}}</view>
+            </view>
+        </view>
+
+        <!-- 主食材 -->
+        <view class="foodTittle">主食材</view>
+        <view class="foodOuter">
+            <view class="food" wx:for="{{foodShow.food}}" wx:key="index">{{item}}</view>
+        </view>
+
+        <!-- 辅料 -->
+        <view class="materialTittle">辅料</view>
+        <view class="materialOuter">
+            <view class="material" wx:for="{{foodShow.material}}" wx:key="index">{{item}}</view>
+        </view>
+
+        <!-- 主要步骤 -->
+        <view class="stepsTittle">主要步骤</view> 
+        <view class="stepsOuter">
+            <view class="steps" wx:for="{{foodShow.steps}}" wx:key="id">
+                <view class="o"></view>
+                <view class="msg">{{item.msg}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+ 

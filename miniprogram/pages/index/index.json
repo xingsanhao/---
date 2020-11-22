@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Search":"../../components/Search/Search",
+    "tabs":"../../components/tabs/tabs",
+    "foodImg":"../../components/foodImg/foodImg"
+  },
+  "navigationBarTitleText": "拾味"
+}

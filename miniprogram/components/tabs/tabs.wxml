@@ -1,0 +1,16 @@
+<view class="tabs">
+    <view class="tabs_tittle">
+        <view wx:for="{{tabs}}" wx:key="id" class="tittle_item">
+            <view class="tittle_icon {{item.isActive?'icon_active':''}}" wx:if="{{item.isActive == true}}">
+                <image class="tittle_icon1" src="{{item.Asrc}}" bindtap="TabIconChange" data-index="{{index}}"/>
+            </view>
+            <view class="tittle_icon {{item.isActive?'icon_active':''}}" wx:elif="{{item.isActive == false}}">
+                <image class="tittle_icon1" src="{{item.src}}" bindtap="TabIconChange" data-index="{{index}}"/>
+            </view>
+            <view class="tittle {{item.isActive?'tittle_active':''}}">{{item.name}}</view>
+        </view>    
+    </view>
+    <view class="tabs_content">
+        <slot></slot>
+    </view>
+</view>

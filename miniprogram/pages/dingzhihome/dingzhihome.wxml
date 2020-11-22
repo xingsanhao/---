@@ -1,0 +1,78 @@
+<!-- 头部插图 -->
+<image class="headBackground" src="https://s1.ax1x.com/2020/05/24/tSIg4e.jpg" mode="widthFix" />
+  
+<!-- 搜索框 -->
+<view>
+    <view>
+        <image class="del" src="https://s1.ax1x.com/2020/05/24/tS5LOx.png" mode="widthFix" bindtap="deleteFood"/>
+    </view>
+    <view>
+        <input class="weui-input" auto-focus placeholder="输入您有的食材" bindinput="talk" value="{{inputValue}}"/>
+    </view> 
+    <view>
+        <image class="add" src="https://s1.ax1x.com/2020/05/24/tSICpd.png" mode="widthFix" bindtap="addFood"/>
+    </view>
+</view>
+
+<!-- 展示被选食材 -->
+<!-- 第一行 -->
+<view class="foodcontent1">
+    <view wx:if="{{foodList[0] != null}}">
+        <view class="showFood1">{{foodList[0]}}</view>
+    </view>
+    <view wx:if="{{foodList[1] != null}}">
+        <view class="showFood2">{{foodList[1]}}</view>
+    </view>
+</view>
+<!-- 第二行 -->
+<view class="foodcontent2">
+    <view wx:if="{{foodList[2] != null}}">
+        <view class="showFood">{{foodList[2]}}</view>
+    </view>
+</view> 
+<!-- 第三行 -->
+<view class="foodcontent3">
+    <view wx:if="{{foodList[3] != null}}">
+        <view class="showFood1">{{foodList[3]}}</view>
+    </view>
+    <view wx:if="{{foodList[4] != null}}">
+        <view class="showFood2">{{foodList[4]}}</view>
+    </view>
+</view> 
+
+<view class="Outer">
+    <!-- 喜好 -->
+    <view class="outerhobby">
+        <view class="hobby">喜好</view>
+        <view class="underhobby"></view>
+        <view class="outerList">
+            <view wx:for="{{hobbyList}}" wx:key="id">
+                <view class="tittle_hobby {{item.isActive?'hobby_active':''}}" bindtap="changeHobby" data-index="{{index}}">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 其他要求 -->
+    <view class="outerextra">
+        <view class="extra">其他要求</view>
+        <view class="underextra"></view>
+        <view class="requireShowOuter">
+            <view class="requireShow" wx:for="{{requireList}}" wx:key="id" bindtap="changeActive" data-index="{{index}}">
+                <view class="requireIcon  {{item.isActive?'icon_active':''}} ">
+                    <image class="icon" src="{{item.icon_src}}" mode="widthFix"/>
+                </view> 
+                <view class="requireTittle  {{item.isActive?'tittle_active':''}}">{{item.tittle}}</view>
+                <view class="requireText">{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 提交 -->
+<view>
+    <image class="bottomImg" src="https://s1.ax1x.com/2020/05/25/tCBe8f.jpg" mode="widthFix"/>
+    <button class="Submit" style="width: 240rpx;" bindtap="submit">选好了</button>
+</view>
+  
+
+  

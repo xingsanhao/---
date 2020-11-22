@@ -1,0 +1,21 @@
+<!-- 头部插图 -->
+<image class="headBackground" src="https://s1.ax1x.com/2020/05/26/tPfVQs.jpg" mode="widthFix" />
+
+<!-- 食谱列表 -->
+<view class="OuterLeft">
+    <view class="outer" wx:for="{{foodList}}" wx:key="id" wx:if="{{item.id % 2 == 0}}">
+        <image class="foodImg" src="{{item.src}}" mode="widthFix" bindtap="goToShow" data-index="{{index}}"/>
+        <view class="foodName">{{item.name}}</view>
+        <view class="foodUser">{{item.username}}</view>
+    </view>
+</view>
+<view class="OuterRight">
+    <view class="outer" wx:for="{{foodList}}" wx:key="id" wx:if="{{item.id % 2 != 0}}">
+        <image class="foodImg" src="{{item.src}}" mode="widthFix" bindtap="goToShow" data-index="{{index}}"/>
+        <view class="foodName">{{item.name}}</view>
+        <view class="foodUser">{{item.username}}</view>
+    </view>
+</view>
+  
+
+  
